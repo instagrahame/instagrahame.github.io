@@ -96,7 +96,7 @@ body {
   }
 
   .screensaver {
-    background-image: url("./images/bettercrop_gif.gif");
+    background-image: url("./bettercrop_gif.gif");
     background-size: cover;
     border-radius: 20px;
     width: 260px;
