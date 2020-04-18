@@ -1,5 +1,8 @@
 
-a { text-decoration: none; }
+a { 
+  text-decoration: none; 
+  color: #000000;
+  }
 
 body {
     background: #f4e3ff;
@@ -24,14 +27,13 @@ body {
     top: 0; left: 0; bottom: 0; right: 0;
   }
   
-  
   .macintosh {
     display: block;
     width: 340px;
     height: 475px;
     margin: 125px auto;
     position: relative;
-    box-shadow: 0 100px 60px -60px rgba(0,0,0,0.4);
+    box-shadow: 0 100px 50px -50px rgba(0,0,0,0.4);
   }
   
   .monitor {
@@ -44,10 +46,10 @@ body {
     position: absolute;
     background-image: lineear-gradient(
       #DDDBC2, #DFDAC4
-    );
+      );
     background-image: conic-gradient(
       #DDDBC2 0 10.5%, #ECECD5 11% 11.5%, #CECDAF 12% 38%, #C8C4A7 39% 61.5%, #C7C3A6 62% 88%, #DFDAC4 88.5% 89%, #DDDBC2 89.25%
-    ); /* Not supported everywhere :( */
+      ); 
     box-shadow: 0 60px 20px -20px rgba(142,137,97,0.5);
   }
   
@@ -77,10 +79,10 @@ body {
     border-radius: 5px;
     background-image: linear-gradient(
       #938F6A, #E0DFC3
-    ); 
+      ); 
     background-image: conic-gradient(
       #938F6A 12.5%, #B5B293 15.5% 33%, #E0DFC3 34% 65.5%, #C2C1A2 66.5% 83.5%, #938F6A 86.5%
-    ); 
+      ); 
   }
   
   .screen { /* display */
@@ -106,12 +108,14 @@ body {
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
+    box-shadow: 0 0 20px 10px #2B3030 inset;
+
   }
   
   .logo {
     display: block;
     width: 24px;
-    height: 22px;
+    height: 24px;
     background-image: radial-gradient(#C9C6B5, #CBC9BA);
     border-radius: 2px;
     position: absolute;
@@ -123,7 +127,6 @@ body {
   
   .logo p {
     text-align: center;
-    margin-top: -1.2px;
   }
   
   .opening {
@@ -140,7 +143,7 @@ body {
     border-radius: 4px;
   }
   
-  .opening-inner {
+  .opening-inner {    /* slot to put a disk ;) */
     display: block;
     width: 126px;
     height: 8px;
@@ -151,6 +154,12 @@ body {
     left: 0;
     right: 0;
     top: 3.5px;
+  }
+
+  .opening-inner p {
+    text-align: center;
+    margin-top: -11.5px;
+    color: #000000;
   }
   
   .foot {
